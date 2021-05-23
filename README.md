@@ -54,7 +54,7 @@ If you want to solve the above problem, you should prepare `Package.swift` for e
 import PackageDescription
 
 let package = Package(
-    name: "CLI",
+    name: "_swiftgen",
     dependencies: [
         .package(url: "https://github.com/SwiftGen/SwiftGen", .exact("6.4.0"))
     ]
@@ -73,7 +73,7 @@ $ swift run --package-path CLI/_swiftgen -c release swiftgen
 import PackageDescription
 
 let package = Package(
-    name: "CLI",
+    name: "_xcodegen",
     dependencies: [
         .package(url: "https://github.com/yonaskolb/xcodegen", .exact("2.22.0"))
     ]
